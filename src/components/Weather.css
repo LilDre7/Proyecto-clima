@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Dokdo&family=Inconsolata&family=Londrina+Shadow&family=Nabla&family=Nanum+Brush+Script&display=swap");
+.container {
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  max-width: 90%;
+  margin: 0 auto;
+  border-radius: 7px;
+  box-shadow: 4px 4px 2px 4px rgba(4, 4, 4, 0.299);
+}
+
+h5 {
+  font-family: "Nanum Brush Script", cursive;
+}
+
+.search {
+  background-color: rgb(251, 251, 251);
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(45deg, #f00, #0f0, #00f);
+  background-size: 400% 400%;
+  animation: gradiente 10s ease infinite;
+  background-attachment: fixed;
+}
+
+@keyframes gradiente {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 400% 0;
+  }
+}
+
+.section-searh {
+  background-color: rgb(250, 253, 254);
+  width: 80%;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.bg_1 {
+  background: #000000; 
+  background: -webkit-linear-gradient(
+    to right,
+    #434343,
+    #000000
+  );
+  background: linear-gradient(
+    to right,
+    #434343,
+    #000000
+  );
+}
+
+.bg_1:hover {
+  background: #00feba;
+  transition: all 3s;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.box-clima {
+  background-color: rgba(49, 47, 47, 0.181);
+  margin: 10px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 0.636);
+}
+
