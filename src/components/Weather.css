@@ -7,6 +7,28 @@
   box-shadow: 4px 4px 2px 4px rgba(4, 4, 4, 0.299);
 }
 
+.container {
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.container:hover {
+  transform: rotateY(360deg);
+}
+
+.container {
+  perspective: 1000px; /* Agrega perspectiva a la vista en 3D */
+  transition: transform 0.5s; /* Agrega una transición suave para la rotación */
+}
+
+.container:hover, .container:focus, .container:active {
+  transform: rotateY(360deg); /* Gira el contenedor en el eje Y al hacer hover, enfocarlo o hacer clic sobre él */
+}
+
+.container * {
+  transform-style: preserve-3d; /* Indica que los elementos hijos del contenedor deben mantener su posición en 3D */
+}
+
 h5 {
   font-family: "Nanum Brush Script", cursive;
 }
