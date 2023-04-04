@@ -23,7 +23,7 @@ function Icons(props) {
             icon = "public/images/overcast.svg";
             break;
         default:
-            icon = "public/images/clearsky.svg";
+            icon = "images/clearsky.svg";
             console.log("LIMPIO");
     }
 
