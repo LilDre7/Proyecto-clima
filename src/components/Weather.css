@@ -17,16 +17,16 @@
 }
 
 .container {
-  perspective: 1000px; /* Agrega perspectiva a la vista en 3D */
-  transition: transform 0.5s; /* Agrega una transición suave para la rotación */
+  perspective: 1000px; 
+  transition: transform 0.5s; 
 }
 
 .container:hover, .container:focus, .container:active {
-  transform: rotateY(360deg); /* Gira el contenedor en el eje Y al hacer hover, enfocarlo o hacer clic sobre él */
+  transform: rotateY(360deg); 
 }
 
 .container * {
-  transform-style: preserve-3d; /* Indica que los elementos hijos del contenedor deben mantener su posición en 3D */
+  transform-style: preserve-3d;
 }
 
 h5 {
@@ -94,3 +94,6 @@ h5 {
   color: rgba(255, 255, 255, 0.636);
 }
 
+.nuve {
+  height: 10px;
+}

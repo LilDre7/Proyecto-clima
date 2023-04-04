@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Weather.css";
 import Swal from "sweetalert2";
+import Icons from "./Icons";
 
-const Weather = ({ weather, temp }) => {
+const Weather = ({ weather, temp , icon}) => {
   const [isCelcius, setIsCelcius] = useState(true);
 
   const changeUnitTemp = () => {
@@ -40,14 +41,18 @@ const Weather = ({ weather, temp }) => {
             ></ion-icon>
           </span>
         </div>
-
+        {/* Icono animado */}
+        <div className=" ">
+          <Icons icon={icon} />
+        </div>
         <article className="">
-          <div className=" flex justify-center h-40 ">
+          {/* Icono estatico / Lo logre normal tambien  */}
+          {/* <div className=" flex justify-center h-40 ">
             <img
               src={`https://openweathermap.org/img/wn/${weather.weather[0].icon}@4x.png`}
               alt=""
-            />
-          </div>
+            /> 
+          </div> */}
 
           <div className=" pb-2 ">
             <h2 className=" text-[2.2rem] font-bold">
@@ -65,16 +70,12 @@ const Weather = ({ weather, temp }) => {
         </article>
 
         <article className="flex justify-around items-center flex-wrap p-2">
-          
           <div className="box-clima flex">
             <div className=""></div>
             <div>
               <img className="" src="/images/wind.png" alt="" />
             </div>
-            <h5 className=" px-2  text-[1.7rem]">
-              {" "}
-              {weather.wind.speed} m/s{" "}
-            </h5>
+            <h5 className=" px-2  text-[1.7rem]"> {weather.wind.speed} m/s </h5>
           </div>
 
           <div className="box-clima flex ">
