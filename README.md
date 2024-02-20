@@ -1,1 +1,1 @@
-Readme for the proyect clime
+Readme for the proyect whiter
